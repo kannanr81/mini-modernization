@@ -35,6 +35,6 @@ jobs:
 
       - name: Update ProfileService deployment on EKS
         run: |
-          aws eks update-kubeconfig --region us-east-1 --name mini-modern-cluster
+          aws eks update-kubeconfig --region us-east-1 --name mini-modern-cluster-kan
           kubectl rollout restart deployment profile-service
 
